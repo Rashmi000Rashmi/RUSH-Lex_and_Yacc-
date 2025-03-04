@@ -1,0 +1,99 @@
+start {
+    a = 10
+    b = 5
+    output("RUSH Language Test Suite")
+    output("========================")
+    
+    c = a + b
+    d = a - b
+    e = a * b
+    f = a / b
+    g = a % b
+    
+    output("a = ")
+    output(a)
+    output("b = ")
+    output(b)
+    output("a + b = ")
+    output(c)
+    output("a - b = ")
+    output(d)
+    output("a * b = ")
+    output(e)
+    output("a / b = ")
+    output(f)
+    output("a % b = ")
+    output(g)
+    
+    output("2. Nested Expressions:")
+    h = (a + b) * (a - b)
+    output("(a + b) * (a - b) = ")
+    output(h)
+    
+    output("4. Conditional Statements:")
+    if (a > b) {
+        output("a is greater than b")
+    } else {
+        output("a is not greater than b")
+    }
+    
+    if (a == 10) {
+        output("a equals 10")
+    }
+    
+    if (a != b) {
+        output("a is not equal to b")
+    }
+    
+    output("5. Looping:")
+    output("Counting from 1 to 5:")
+    iterate from 1 to 5 by 1 {
+        output(i)
+    }
+    
+    output("6. Functions:")
+    
+    define square(num) {
+        result = num * num
+        output("Square of ")
+        output(num)
+        output("is ")
+        output(result)
+    }
+    
+    define add(num1, num2) {
+        sum = num1 + num2
+        output("Sum of ")
+        output(num1)
+        output("and ")
+        output(num2)
+        output("is ")
+        output(sum)
+    }
+    
+    square(4)
+    square(5)
+    add(7, 3)
+    
+    output("7. Combining Features:")
+    
+    output("Even numbers between 1 and 10:")
+    iterate from 1 to 10 by 1 {
+        remainder = i % 2
+        if (remainder == 0) {
+            output(i)
+        }
+    }
+    
+    output("8. Factorial Calculation:")
+    n = 5
+    fact = 1
+    iterate from 1 to n by 1 {
+        fact = fact * i
+    }
+    output("Factorial of 5 is:")
+    output(fact)
+    
+    output("========================")
+    output("Test suite completed")
+} done
